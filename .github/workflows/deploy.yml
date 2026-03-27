@@ -44,6 +44,7 @@ jobs:
           gcloud run deploy ai-cv-backend \
           --image $REGION-docker.pkg.dev/$PROJECT/$REPO/backend:$TAG \
           --region $REGION \
+          --timeout 300s \
           --platform managed \
           --allow-unauthenticated \
           --set-env-vars OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
