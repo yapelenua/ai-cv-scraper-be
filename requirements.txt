@@ -24,3 +24,4 @@ typing_extensions==4.15.0
 Werkzeug==3.1.7
 gunicorn==25.2.0
 python-dotenv==1.2.2
+PyPDF2==3.0.1
